@@ -1,0 +1,15 @@
+[user]
+	name = Andy Blight
+	email = andy.blight@gmail.com
+[core]
+	editor = vim
+[merge]
+	tool = kdiff3
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	d = diff
+	dc = diff --cached
+	fh = log --follow -p --
