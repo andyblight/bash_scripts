@@ -31,6 +31,8 @@ if [ "$TERM" == "xterm" ] || [ "$TERM" == "screen" ] || [ $TERM == "xterm-256col
 
     # Bash prompt
     # Colours:
+    txtpur='\e[0;35m' # Purple
+
     # using tput commands
     FGBLK=$( tput setaf 0 ) # 000000
     FGRED=$( tput setaf 1 ) # ff0000
@@ -55,8 +57,7 @@ if [ "$TERM" == "xterm" ] || [ "$TERM" == "screen" ] || [ $TERM == "xterm-256col
     UNDER=$( tput smul )
     REVRS=$( tput rev )
 
-    export PS1="$BOLDM\[$FGGRN\][\u@\h\[$txtpur\] \W\[$FGRED\]\$(__git_ps1 \(%s\))\[$FGGRN\]]\$ \[$RESET\]"
-    #export PS1='\[$FGGRN\][\u@\h \[$FGBLU\]\W\[$FGRED\]\$(__git_ps1 \(%s\))\[$FGGRN\]]\$ \[$RESET\]'
+    export PS1="\[$BOLDM\]\[$FGGRN\][\u@\h\[$txtpur\]\[$BOLDM\] \W\[$FGRED\]\$(__git_ps1 \(%s\))\[$FGGRN\]]\$ \[$RESET\]"
 else
     export PS1="[\u@\h \W\$(__git_ps1 \(%s\))]\$ "
 fi
