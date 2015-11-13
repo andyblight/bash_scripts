@@ -61,3 +61,5 @@ if [ "$TERM" == "xterm" ] || [ "$TERM" == "screen" ] || [ $TERM == "xterm-256col
 else
     export PS1="[\u@\h \w\$(__git_ps1 \(%s\))]\$ "
 fi
+
+HISTCONTROL=ignoredups
