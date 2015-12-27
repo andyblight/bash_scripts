@@ -57,9 +57,9 @@ if [ "$TERM" == "xterm" ] || [ "$TERM" == "screen" ] || [ $TERM == "xterm-256col
     UNDER=$( tput smul )
     REVRS=$( tput rev )
 
-    export PS1="\[$BOLDM\]\[$FGGRN\][\u@\h\[$txtpur\]\[$BOLDM\] \w\[$FGRED\]\$(__git_ps1 \(%s\))\[$FGGRN\]]\$ \[$RESET\]"
+    export PS1="\[$BOLDM\]\[$FGGRN\]\u@\h\[$txtpur\]\[$BOLDM\] \w\[$FGRED\]\$(__git_ps1 \(%s\))\[$FGGRN\]\$ \[$RESET\]"
 else
-    export PS1="[\u@\h \w\$(__git_ps1 \(%s\))]\$ "
+    export PS1="\u@\h \w\$(__git_ps1 \(%s\))\$ "
 fi
 
 HISTCONTROL=ignoredups
