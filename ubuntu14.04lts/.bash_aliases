@@ -1,9 +1,6 @@
 # Some useful aliases.
 alias h='history'
 alias j="jobs -l"
-alias l="ls -l "
-alias ll="ls -l"
-alias ls="ls -F"
 alias pu="pushd"
 alias po="popd"
 
@@ -17,8 +14,7 @@ add-alias ()
    alias $name
 }
 
-PATH=/home/andy/bin:$PATH
-alias la='ls -al'
+PATH=$HOME/bin:$PATH
 
 # Colour prompt 
 # User specific aliases and functions
