@@ -3,6 +3,7 @@ alias h='history'
 alias j="jobs -l"
 alias pu="pushd"
 alias po="popd"
+alias psg="ps aux | grep"
 
 # Function which adds an alias to the current shell and to
 # the ~/.bash_aliases file.
