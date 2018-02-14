@@ -9,6 +9,9 @@ then
   cp $1/.gitconfig ${HOME}
   cp $1/.bash_aliases ${HOME}
   cp -R $1/bin ${HOME}
+  echo "Success!  Now set your git user name and email address, e.g."
+  echo "$ git config --global user.name \"John Doe\""
+  echo "$ git config --global user.email johndoe@example.com"
 else
   echo "No directory '$1'"
 fi
