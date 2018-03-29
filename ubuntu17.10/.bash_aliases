@@ -24,7 +24,6 @@ source /usr/lib/git-core/git-sh-prompt
 # For 256 colours in xterm
 if [ "$TERM" == "xterm" ] || [ "$TERM" == "screen" ] || [ $TERM == "xterm-256color" ]; then
     #TERM=xterm-256color
-    export PROMPT_COMMAND='printf "\033]0;%s@%s:%s\033\\" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
 
     # Bash prompt
     # Colours:
