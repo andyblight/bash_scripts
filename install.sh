@@ -1,17 +1,19 @@
 #! /bin/bash
-# Installs the scripts from the $1 directory.
+# Installs the scripts from the specified directory.
 
 set -e
 
-if [ -d $1 ]
+INSTALL_DIR=ubuntu18.04lts
+
+if [ -d ${INSTALL_DIR} ]
 then
-  echo "Installing scripts from $1 to home directory"
-  cp $1/.gitconfig ${HOME}
-  cp $1/.bash_aliases ${HOME}
-  cp -R $1/bin ${HOME}
+  echo "Installing scripts from ${INSTALL_DIR} to home directory"
+  cp ${INSTALL_DIR}/.gitconfig ${HOME}
+  cp ${INSTALL_DIR}/.bash_aliases ${HOME}
+  cp -R ${INSTALL_DIR}/bin ${HOME}
   echo "Success!  Now set your git user name and email address, e.g."
   echo "$ git config --global user.name \"John Doe\""
   echo "$ git config --global user.email johndoe@example.com"
 else
-  echo "No directory '$1'"
+  echo "No directory '${INSTALL_DIR}'"
 fi
