@@ -11,3 +11,5 @@ echo "deb https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.li
 # Install Skype for Linux
 sudo apt update
 sudo apt install skypeforlinux
+
+echo "skypeforlinux hung when the first time I used it after installation.  I quit and restarted and it worked fine after that."
