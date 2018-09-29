@@ -1,6 +1,7 @@
 #!/bin/bash
 # From: https://docs.docker.com/compose/install/
 
+set -e
 VERSION=1.22.0
 
 # Download the latest version of Docker Compose:
