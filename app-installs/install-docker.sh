@@ -3,7 +3,7 @@
 
 set -e
 
-echo "If this script fails at any time, run the remainging commands from this file using copy and paste."
+echo "If this script fails at any time, run the remaining commands from this file using copy and paste."
 
 # Update the apt package index:
 sudo apt update
@@ -42,4 +42,4 @@ sudo add-apt-repository \
 sudo apt update
 
 # Install the latest version of Docker CE, or go to the next step to install a specific version:
-sudo apt install docker-ce
+sudo apt install -y docker-ce
