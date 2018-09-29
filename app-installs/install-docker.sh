@@ -43,3 +43,8 @@ sudo apt update
 
 # Install the latest version of Docker CE, or go to the next step to install a specific version:
 sudo apt install -y docker-ce
+
+# Add the current user to the docker group
+sudo usermod -aG docker ${USER}
+
+echo "Please log out and log in again to use docker as yourself (not sudo)."
