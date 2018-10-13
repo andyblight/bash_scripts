@@ -12,4 +12,11 @@ echo "deb https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.li
 sudo apt update
 sudo apt install skypeforlinux
 
+# Now tidy up.  
+# The installation writes the file /etc/apt/sources.list.d/skype-stable.list so we can delete the file that we created. 
+sudo rm /etc/apt/sources.list.d/skypeforlinux.list
+
+# Remove the gpg key file
+rm microsoft.gpg
+
 echo "skypeforlinux hung when the first time I used it after installation.  I quit and restarted and it worked fine after that."

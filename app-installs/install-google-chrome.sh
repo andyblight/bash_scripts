@@ -10,3 +10,6 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 # Update and install
 sudo apt update
 sudo apt install -y google-chrome-stable
+
+# Now tidy up.  The installation writes the file /etc/apt/sources.list.d/google-chrome.list so we can delete the file that we created. 
+sudo rm /etc/apt/sources.list.d/google.list
