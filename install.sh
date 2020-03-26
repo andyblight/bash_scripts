@@ -7,6 +7,7 @@ INSTALL_DIR=ubuntu18.04lts
 
 if [ -d ${INSTALL_DIR} ]
 then
+  sudo apt install -y gitk vim meld
   echo "Installing scripts from ${INSTALL_DIR} to home directory"
   cp ${INSTALL_DIR}/.gitconfig ${HOME}
   cp ${INSTALL_DIR}/.bash_aliases ${HOME}
