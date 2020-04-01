@@ -2,6 +2,7 @@
 	ui = auto
 [core]
 	editor = vim
+	filemode = true
 [merge]
 	tool = meld
 [alias]
@@ -18,6 +19,7 @@
 	rf = commit -a -c ORIG_HEAD
 	st = status
 	type = cat-file -t
+	chmod = update-index --chmod=+x
 [push]
 	default = simple
 [diff]
