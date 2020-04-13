@@ -1,0 +1,22 @@
+[color]
+	ui = auto
+[core]
+	editor = vim
+[alias]
+	ci = commit
+	co = checkout
+	br = branch
+	co = checkout
+	dump = cat-file -p
+	d = diff
+	dc = diff --cached
+	fh = log --follow -p --
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	rb = reset --soft HEAD~1
+	rf = commit -a -c ORIG_HEAD
+	st = status
+	type = cat-file -t
+[push]
+	default = simple
+[diff]
+	renamelimit = 7500

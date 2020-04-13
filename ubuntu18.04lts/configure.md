@@ -1,4 +1,4 @@
-# Configure Kubuntu 818.04LTS PC
+# Configure Kubuntu 18.04LTS PC
 
 These are things that I like to do to set up my PC.
 
