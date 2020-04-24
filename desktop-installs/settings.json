@@ -1,0 +1,15 @@
+{
+    "editor.fontSize": 12,
+    "debug.console.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "editor.fontFamily": "'Noto Mono','Courier'",
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        "preview.fontSize": 12,
+        "editor.quickSuggestions": false,
+        "editor.rulers": [
+            79
+        ],
+        "editor.wordWrap": "on"
+    }
+}
