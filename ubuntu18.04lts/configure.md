@@ -18,8 +18,8 @@ Edit /etc/apt/apt.conf.d/20auto-upgrades and switch off the Unattended-Upgrade
 directive from 1 to 0 as shown below on Line 1:
 
 ```text
-APT::Periodic::Update-Package-Lists "0";
-APT::Periodic::Unattended-Upgrade "1";
+APT::Periodic::Update-Package-Lists "1";
+APT::Periodic::Unattended-Upgrade "0";
 ```
 
 Save and exit.
@@ -71,11 +71,3 @@ sudo ./VBoxLinuxAdditions.run
 ```
 Restart.
 Should be good to go!
-
-
-
-
-
-
-
-
