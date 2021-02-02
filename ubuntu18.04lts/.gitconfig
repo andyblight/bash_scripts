@@ -24,3 +24,7 @@
 	default = simple
 [diff]
 	renamelimit = 7500
+[init]
+  defaultBranch = main
+[credential]
+  helper = cache --timeout=3600
